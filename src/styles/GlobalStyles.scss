@@ -1,7 +1,12 @@
-@import "Variables.scss";
-
 body {
   font-family: Poppins;
   margin: 0;
   padding: 0;
+}
+
+%logo {
+  -webkit-text-stroke: 1px #888585;
+  color: white;
+  text-transform: uppercase;
+  font-weight: 900;
 }

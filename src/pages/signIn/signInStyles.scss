@@ -1,0 +1,47 @@
+@import "../../styles/GlobalStyles.scss";
+@import "../../styles/Variables.scss";
+
+.SignIn__Container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+
+  .SignIn__Backbtn {
+    background-color: #333131;
+    border: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    margin: 2rem;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 5px 15px;
+    border-radius: 10rem;
+    color: white;
+  }
+
+  .SignIn__Form {
+    border: 2px solid #d7cfcf;
+    box-shadow: 0px 0px 7px 4px #dcdcdc;
+    border-radius: 5px;
+    padding: 4rem;
+    height: 20rem;
+
+    .SignIn__Title {
+      @extend %logo;
+      font-size: 2rem;
+      margin: 0;
+      text-align: center;
+    }
+
+    .SignIn__Div {
+      display: flex;
+      flex-direction: column;
+      .SignIn__Label {
+        color: $colorBlack;
+        margin-bottom: 5px;
+      }
+    }
+  }
+}

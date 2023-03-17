@@ -1,0 +1,54 @@
+@import "../../styles/Variables.scss";
+@import "../../styles/GlobalStyles.scss";
+
+.Nav__Logo {
+  @extend %logo;
+  position: fixed;
+  left: 2rem;
+  font-size: 1.5rem;
+}
+
+.Nav__SubContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 10rem;
+  padding: 15px;
+
+  .Nav__List {
+    display: flex;
+    list-style: none;
+    color: $colorDarkGray;
+
+    .Nav__Item {
+      margin: 0 1rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+    }
+  }
+
+  .Nav__Div {
+    display: flex;
+    align-items: center;
+
+    .Nav__Btn {
+      background: #333131;
+      border-radius: 5px;
+      border: none;
+      font-weight: 500;
+      font-size: 14px;
+      color: white;
+      padding: 10px;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .Nav__SignUp {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 500;
+      margin: 0 5rem 0 1rem;
+      cursor: pointer;
+    }
+  }
+}
